@@ -1,0 +1,290 @@
+/*
+*  html5resetcss
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/*
+*  end of CSS Reset
+*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/*
+*  Start of Custom CSS
+*/
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    color: hsl(0, 36%, 70%);
+}
+
+#comingSoonSection {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: thistle;
+    -webkit-box-shadow: 0px 11px 22px -2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 11px 22px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 11px 22px -2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+#comingSoonHeader {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+    line-height: 4.25rem;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+#comingSoonHeader i {
+    font-weight: 300;
+    font-style: normal;
+    color: hsl(0, 36%, 70%);
+}
+
+#heroImage {
+    background-image: url(/images/hero-desktop.jpg);
+    width: 610px;
+    height: 800px;
+    float: right;
+}
+
+#baseApparelLogo {
+    margin-top: 3rem;
+}
+
+#comingSoonSectionContent {
+    background-image: url(/images/bg-pattern-desktop.svg);
+    width: 710px;
+    float: left;
+    height: 800px;
+    padding-left: 120px;
+}
+
+#comingSoonSectionContent h1 {
+    padding-top: 150px;
+}
+
+#comingSoonSectionContent p {
+    width: 60%;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+#emailSubmitForm input {
+    width: 60%;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid hsl(0, 36%, 70%);
+    text-indent: 2rem;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 300;
+    color: inherit;
+    line-height: 3rem;
+}
+
+#emailSubmitForm button {
+    width: 100px;
+    height: 52px;
+    border-radius: 500px;
+    cursor: pointer;
+    position: relative;
+    right: 100px;
+    background: rgba(247, 185, 185, 1);
+    /* Old Browsers */
+    background: -moz-linear-gradient( left, rgba(247, 185, 185, 1) 0%, rgba(242, 145, 145, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient( left top, right top, color-stop(0%, rgba(247, 185, 185, 1)), color-stop(100%, rgba(242, 145, 145, 1)));
+    /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient( left, rgba(247, 185, 185, 1) 0%, rgba(242, 145, 145, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient( left, rgba(247, 185, 185, 1) 0%, rgba(242, 145, 145, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient( left, rgba(247, 185, 185, 1) 0%, rgba(242, 145, 145, 1) 100%);
+    /* IE 10+ */
+    background: linear-gradient( to right, rgba(247, 185, 185, 1) 0%, rgba(242, 145, 145, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f7b9b9', endColorstr='#f29191', GradientType=1);
+    /* IE6-9 */
+}
+
+#emailSubmitForm {
+    margin-top: 2rem;
+}
+
+footer {
+    clear: both;
+    padding-top: 2rem;
+}
