@@ -189,7 +189,7 @@ body {
 }
 
 #comingSoonSection {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     -webkit-box-shadow: 0px 11px 22px -2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 11px 22px -2px rgba(0, 0, 0, 0.3);
@@ -225,9 +225,11 @@ body {
 
 #heroImage {
     background-image: url(/images/hero-desktop.jpg);
-    width: 610px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33.333%;
     height: 800px;
-    float: right;
+    float: left;
 }
 
 #baseApparelLogo {
@@ -236,24 +238,43 @@ body {
 
 #comingSoonSectionContent {
     background-image: url(/images/bg-pattern-desktop.svg);
-    width: 710px;
+    background-size: cover;
+    width: 66.666%;
     float: left;
-    height: 800px;
-    padding-left: 120px;
 }
 
 #comingSoonSectionContent h1 {
-    padding-top: 150px;
+    padding-top: 11rem;
+    overflow: visible;
+    max-width: 40rem;
 }
 
 #comingSoonSectionContent p {
-    width: 60%;
+    max-width: 30rem;
     line-height: 2rem;
     margin-top: 1rem;
 }
 
+#comingSoonSectionContentLeft {
+    margin-left: 10%;
+    margin-right: 25%;
+}
+
+#mobileHeroImage {
+    display: none;
+}
+
+#emailSubmitForm {
+    margin-top: 2rem;
+    max-width: 750px;
+    width: 80%;
+}
+
+#emailSubmitForm p {
+    margin-left: 32px;
+}
+
 #emailSubmitForm input {
-    width: 60%;
     height: 48px;
     border-radius: 24px;
     border: 1px solid hsl(0, 36%, 70%);
@@ -263,6 +284,7 @@ body {
     font-weight: 300;
     color: inherit;
     line-height: 3rem;
+    width: 65%;
 }
 
 #emailSubmitForm button {
@@ -292,8 +314,9 @@ body {
     /* IE6-9 */
 }
 
-#emailSubmitForm button:hover {
+#emailSubmitForm button:focus {
     border: none;
+    outline: none;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fadadb+0,f8c8c8+100 */
     background: #fadadb;
     /* Old browsers */
@@ -307,33 +330,8 @@ body {
     /* IE6-9 */
 }
 
-#emailSubmitForm button img {
-    position: relative;
-    left: 2px;
-    top: 1px;
-}
-
-#emailSubmitForm button:focus {
-    outline: none;
-    border: none;
-}
-
 #emailSubmitForm input:focus {
     outline: none;
-}
-
-#emailSubmitForm {
-    margin-top: 2rem;
-}
-
-#emailSubmitForm p {
-    margin-left: 32px;
-}
-
-#emailSubmitForm #errorIcon {
-    position: relative;
-    right: 110px;
-    top: 8px;
 }
 
 .shadow {
@@ -351,4 +349,76 @@ body {
 footer {
     clear: both;
     padding-top: 2rem;
+}
+
+#emailSubmitForm input {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#emailSubmitForm button {
+    width: 90px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
+#emailSubmitForm {
+    position: relative;
+}
+
+#emailSubmitForm #errorIcon {
+    right: 110px;
+    position: absolute;
+    top: 15px;
+}
+
+@media (max-width: 910px) {
+    #heroImage {
+        float: none;
+    }
+    #comingSoonSectionContent {
+        float: none;
+        width: 100%;
+    }
+    #comingSoonSectionContentLeft {
+        margin: 0;
+    }
+    #comingSoonHeader {
+        text-align: center;
+    }
+    #comingSoonSectionContent h1 {
+        padding-top: 3rem;
+        text-align: center;
+    }
+    #comingSoonSectionContent p {
+        text-align: center;
+        width: 100%;
+        margin: 0 0rem;
+    }
+    #mobileHeroImage {
+        display: block;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    #comingSoonHeader {
+        font-size: 3rem;
+    }
+    #heroImage {
+        display: none;
+    }
+    #comingSoonSectionContent h1,
+    #comingSoonSectionContent p {
+        max-width: none;
+    }
+    #comingSoonSectionContent p {
+        width: 80%;
+        margin: 2.05rem auto;
+        margin-bottom: 6rem;
+    }
+    #emailSubmitForm {
+        position: relative;
+        width: 80%;
+        margin: 2rem auto;
+    }
 }
